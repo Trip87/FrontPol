@@ -1,0 +1,92 @@
+// @import "bootstrap/scss/bootstrap";
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// .wrapper {
+//   height: 500px;
+//   width: 1000px;
+//   display: flex;
+//   gap: 10px;
+//   background-color: grey;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: stretch;
+// }
+// //odnosi sie do wszystkich potomkow z klasa. block-article
+// //.wrapper.block-article{}
+
+// .wrapper > .block-article {
+//   //odnosi sie do bezposrednich potomkow w bloku .wrapper o klasie .block-article
+//   width: 200px;
+//   background-color: red;
+//   flex-grow: 1;
+// }
+
+// .wrapper > .block-article:first-child {
+//   flex-basis: 20px;
+// }
+
+// .wrapper > .block-article:nth-child(4n) {
+//   flex-grow: 4;
+// }
+
+// .look {
+//   width: 200px;
+//   height: 200px;
+//   background-color: green;
+// }
+
+// .look:first-child {
+//   position: relative;
+//   top: 25px;
+//   background-color: black;
+// }
+
+// .wrapper {
+// }
+
+// .relative-wrapper {
+//   width: 500px;
+//   height: 500px;
+//   background-color: aqua;
+//   position: relative;
+// }
+
+// .absolute-block {
+//   width: 200px;
+//   height: 200px;
+//   position: absolute;
+//   background-color: red;
+//   top: 50%;
+//   transform: translate(50%, -50%);
+//   right: 50%;
+// }
+
+// .wrapper {
+//   height: 3000px;
+// }
+
+// .lista {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+// }
+
+.sticky-wrapper {
+  padding-left: 200px;
+  height: 1000px;
+  position: relative;
+  background-color: bisque;
+}
+
+.sticky-block {
+  height: 150px;
+  width: 150px;
+  background-color: violet;
+  position: sticky;
+  top: 50px;
+  left: 0;
+}

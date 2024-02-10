@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.scss" />
+    <link rel="stylesheet" href="./output.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <h1 class="text-3xl font-bold underline text-yellow-600">Hello world!</h1>
+
+    <!-- <section class="wrapper">
+      <article class="block-article">1</article>
+      <article class="block-article">2</article>
+      <article class="block-article">3</article>
+      <article class="block-article">4</article>
+      <article class="block-article">5</article>
+      <article class="block-article">6</article>
+      <article class="block-article">7</article>
+      <article class="block-article">8</article>
+      <article class="block-article">9</article>
+      <article class="block-article">10</article>
+    </section> -->
+
+    <!-- <section>
+      <div class="look">KOT</div>
+      <div class="look">PIES</div>
+      <div class="look">RYBKA</div>
+    </section> -->
+
+    <!-- <section class="wrapper"></section>
+
+    <section class="relative-wrapper"></section>
+      <h2>Pozycja absolutna</h2>
+      <div class="absolute-block">
+
+        nasz div
+
+      </div> -->
+
+      <!-- <main class="wrapper">
+
+      </main>
+
+      <header class="lista">
+        <ul>
+          <li>element 1</li>
+          <li>element 2</li>
+          <li>element 3</li>
+        </ul>
+      </header> -->
+
+      <section class=wrapper></section>
+
+      <section class="sticky-wrapper">
+
+        <h2>Position sticky</h2>
+        <div class="sticky-block"></div>
+      </section>
+
+
+
+
+  </body>
+</ihtml>
+
+<!-- Zadanie 1
+Utwórz sekcje
+<section>
+  (posiada klase nadającą styl 500px szerokości) w którym utworzysz 10 artykułów
+  <article>
+    , gdzie każdy z artykułów posiada klase nadającą styl – width: 200px.
+    Następnie nadaj wlasciwosc flexbox za pomocą display dla utworzonej sekcji –
+    co zwróciło Twoją uwagę? :)
+  </article>
+</section>
+
+Zadanie 2
+Nadaj dla utworzonej sekcji z poprzedniego zadania właściwość
+flex-wrap: <tutaj wybierz mądrze :)> - czy teraz już wszystko
+wygląda jak należy?
+Ciekawostka:
+- Domyślnie display: flex ustawia właściwość "flex-wrap: nowrap", dlatego nieodłącznym elementem dla flexboxa jest
+przestawianie tej właściwości
+
+Zadanie 3
+Tym razem się pobawimy w ramach ćwiczenia, spróbuj
+wykorzystać właściwość "flex-direction" i sprawdź jak działają
+dostępne wartości
+
+Zadanie 4
+Wszystkie artykuły warto wyśrodkować tak aby wyglądało to
+elegancko – dlatego wyśrodkuj elementy za pomocą właściwości
+"justify-content" - która wartość wybierzesz aby wygląd był miły
+dla oka?
+
+Zadanie 5 - flexbox
+Zadanie
+I tutaj zagwozdka - która właściwość jest najlepsza na ustawienie
+elementów w pionie? Odpowiedź jest prosta – grafik decyduje, w
+w tym wypadku grafikiem jesteśmy my. Więc sprawdź
+wymienione wyżej 4 wartości i ustaw najbardziej odpowiednią.
+
+Zadanie 6 - flexbox
+Zadanie
+W poprzednim zadaniu ustawialismy szerokość elementu za
+pomocą właściwości "width" - aktualnie poznaliśmy coś co jest
+używane wraz z flexbox <flex-basis> - dlatego teraz ustawmy
+szerokość elementu za pomocą poznanej przed chwilą
+właściwości oraz zbadajmy za pomocą narzędzi deweloperskich
+co na to przeglądarka.
+ALE ALE – ustawmy ją tylko dla pierwszego elementu
+(pseudoklasa :first-child)
+
+Zadanie 7 - flexbox
+Zadanie
+Ustaw elementy dla co 4 elementu wartosc === 2 dla właściwości
+flex-grow, każdy inny element powinien mieć wartosc 1
+
+Zadanie 1 - position
+Zadanie
+Utwórz sekcje która zawiera 3 elementy div. Każdy z tych
+elementów div posiada klase która nakłada style szerokość i
+wysokość 200px oraz background-color (kolor dowolny).
+Następnie dla jednego <div> z 3 nadaj wlasciwość position:
+relative i spróbuj przesunac element dzieki odpowiednim
+właściwościom.
+Przydatne linki:
+- https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child -->
+
+<!-- Zadanie 2 - position
+Zadanie
+Utwórz kolejną sekcje i nadaj jej klase która ustawia style:
+- Szerokość 500px
+- wysokosc 500px
+- Background-color
+Następnie dodaj nagłówek h2 > "Pozycja absolute"
+Kolejnym krokiem jest utworzenie elementu div który posiada klase nadającą style:
+- Width i height 200px
+- background color
+- Position: absolute
+- Top/left/right/bottom
+Pamiętaj, że jeżeli ustawiasz top -> to już nie ma sensu ustawiania bottom. Jeżeli ustawiasz right -> to nie ma sensu
+ustawiania left.
+Następnie zauważ do jakiego elementu odniósł się element z pozycją absolutna.
+Gdy już znalazłeś element div, ustaw pozycje relatywną dla sekcji w której owy div się znajduje – widzisz różnice? -->
+
+<!-- Zadanie 3 - position
+Zadanie
+Ustaw dla tagu <main> styl dzieki klasie "height: 3000px".
+Następnie dla utworzonego wyżej <header> ustaw style:
+- Position: fixed
+- Top: 0
+- Left: 0
+- Right: 0
+Następnie poscrolluj strone w dół i zobacz gdzie znajduje się
+header -->
+
+Zadanie 4 - position
+Zadanie
+Utwórz nową sekcje <section> która posiada styl padding-left: 200px,
+height: 1000px, position: relative. Następnie dodaj nagłowek h2 z tekstem
+"position sticky" oraz akapit z lorem ipsum. Po wykonaniu tych czynnosci
+utwórz <div> ze stylami:
+- Height: 150px
+- Width: 150px
+- Background-color
+- Position: sticky
+- Top: 0
+Nastepnie poscrolluj w dół i zwwróc uwagę na zachowanie diva
