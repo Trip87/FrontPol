@@ -3,77 +3,64 @@
 // @tailwind components;
 // @tailwind utilities;
 
-// .wrapper {
-//   height: 500px;
-//   width: 1000px;
-//   display: flex;
-//   gap: 10px;
-//   background-color: grey;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: stretch;
-// }
-// //odnosi sie do wszystkich potomkow z klasa. block-article
-// //.wrapper.block-article{}
+.wrapper {
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  // dodawanie odleglosci miedzy elementami w flexbox
+  gap: 10px;
+  width: 1000px;
+  align-items: center;
+}
 
-// .wrapper > .block-article {
-//   //odnosi sie do bezposrednich potomkow w bloku .wrapper o klasie .block-article
-//   width: 200px;
-//   background-color: red;
-//   flex-grow: 1;
-// }
+// odnosi sie do wszystkich potomków z klasa .block-article
+// .wrapper .block-article {}
 
-// .wrapper > .block-article:first-child {
-//   flex-basis: 20px;
-// }
+// odnosi sie do bezposrednich potomkow w bloku .wrapper o klasie .block-article
+.wrapper > .block-article {
+  // width: 200px;
+  flex-grow: 1;
+  background-color: red;
+}
+.block-article:first-child {
+  // flex-basis: 50px;
+  border: 1px solid yellow;
+}
+.block-article:nth-child(4n) {
+  flex-grow: 4;
+}
 
-// .wrapper > .block-article:nth-child(4n) {
-//   flex-grow: 4;
-// }
+.relative-wrapper {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  position: relative;
+}
 
-// .look {
-//   width: 200px;
-//   height: 200px;
-//   background-color: green;
-// }
+.absolute-block {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: red;
+  top: 50px;
+  // transform: translate(50%, -50%);
+  right: 50%;
+}
 
-// .look:first-child {
-//   position: relative;
-//   top: 25px;
-//   background-color: black;
-// }
+.body {
+  height: 3000px;
+}
 
-// .wrapper {
-// }
-
-// .relative-wrapper {
-//   width: 500px;
-//   height: 500px;
-//   background-color: aqua;
-//   position: relative;
-// }
-
-// .absolute-block {
-//   width: 200px;
-//   height: 200px;
-//   position: absolute;
-//   background-color: red;
-//   top: 50%;
-//   transform: translate(50%, -50%);
-//   right: 50%;
-// }
-
-// .wrapper {
-//   height: 3000px;
-// }
-
-// .lista {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-// }
+.header-fixed {
+  background: #000;
+  color: #fff;
+  padding: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
 
 .sticky-wrapper {
   padding-left: 200px;
